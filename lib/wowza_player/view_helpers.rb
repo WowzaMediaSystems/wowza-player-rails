@@ -18,7 +18,5 @@ module WowzaPlayer
       EOS
       return unsafe_html.html_safe
     end
-
-
   end
 end
