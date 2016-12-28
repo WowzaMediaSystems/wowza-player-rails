@@ -8,9 +8,9 @@ module WowzaPlayer
 
     def wowza_player_tag(config={})
       unsafe_html = <<-EOS
-      var config = #{JSON.pretty_generate(config)};
       <div id="wowza_player"></div>
       <script type="text/javascript">
+        var config = #{JSON.pretty_generate(config)};
         WowzaPlayer.create('wowza_player',config);
       </script>
       EOS
