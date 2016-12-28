@@ -1,7 +1,7 @@
 module WowzaPlayer
   module ViewHelpers
 
-    def wowza_player_script(player_source=nil)
+    def wowza_player_script_tag(player_source=nil)
       player_source ||= "https://player.wowza.com/player/latest/wowzaplayer.min.js"
       javascript_include_tag player_source
     end
