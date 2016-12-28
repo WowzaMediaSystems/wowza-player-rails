@@ -2,14 +2,14 @@ require 'rails/generators/named_base'
 require 'rails/generators/base'
 class WowzaPlayerGenerator < Rails::Generators::Base
   def install
-    puts "***"*80
+    puts "***"*20
     puts "Injecting Wowza Player CDN source tag into your application layout \n"
     begin
       if (File.exists?('app/views/layouts/application.html.haml'))
         inject_into_file 'app/views/layouts/application.html.haml', :after => "%head" do
           "\n    = wowza_player_script_tag\n"
         end
-        puts "---"*80
+        puts "---"*20
         puts "Please make sure the wowza_player_script_tag was injected to your liking in app/views/layouts/application.html.haml"
       elsif (File.exists?('app/views/layouts/application.html.erb'))
         inject_into_file 'app/views/layouts/application.html.erb', :before => "</head>" do
@@ -24,7 +24,7 @@ class WowzaPlayerGenerator < Rails::Generators::Base
       end
 
       puts "Wowza Player source has been installed to you app"
-      puts "***"*80
+      puts "***"*20
       puts <<-EOS
         The Wowza Player is now available as a helper to use in your Rails templates
 
