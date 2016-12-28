@@ -5,12 +5,12 @@ class WowzaPlayerGenerator < Rails::Generators::Base
     puts "Injecting Wowza Player CDN source tag into your application layout"
     begin
       if (File.exists?('app/views/layouts/application.html.haml'))
-        inject_into_file 'app/views/layouts/application.html.haml', :before => '%body' do
+        inject_into_file 'app/views/layouts/application.html.haml', :before => "\n%body" do
           "= wowza_player_script_tag\n"
         end
         puts "Please make sure the wowza_player_script_tag is indented correctly to avoid errors."
       elsif (File.exists?('app/views/layouts/application.html.erb'))
-        inject_into_file 'app/views/layouts/application.html.erb', :before => '</head>' do
+        inject_into_file 'app/views/layouts/application.html.erb', :before => "</head>" do
           "<%= wowza_player_script_tag %>\n"
         end
       else
