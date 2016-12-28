@@ -1,6 +1,8 @@
-# WowzaPlayer
+# Wowza Player
 
-The Wowza Player in a friendly Rails wrapper
+The Wowza Player in a friendly Rails wrapper.
+
+You can find out more about Wowza Player and obtain a license [here](https://www.wowza.com/products/player)
 
 ## Installation
 
@@ -41,8 +43,7 @@ Simply convert the parameters from JSON notation to ruby hash syntax and pass th
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/wowza_player.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/WowzaMediaSystems/wowza-player-rails.
 
 ## License
 
