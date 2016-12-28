@@ -1,0 +1,7 @@
+The Wowza Player is now available as a helper to use in your Rails templates
+
+ERB:
+  <% = wowza_player_tag(license: <your-wowza-player-license>, sourceURL: <hls-source-url>) %>
+
+HAML:
+  = wowza_player_tag(license: <your-wowza-player-license>, sourceURL: <hls-source-url>)

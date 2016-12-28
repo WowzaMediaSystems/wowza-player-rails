@@ -2,13 +2,15 @@ require 'rails/generators/named_base'
 require 'rails/generators/base'
 class WowzaPlayerGenerator < Rails::Generators::Base
   def install
-    puts "Injecting Wowza Player CDN source tag into your application layout"
+    puts "***"*80
+    puts "Injecting Wowza Player CDN source tag into your application layout \n"
     begin
       if (File.exists?('app/views/layouts/application.html.haml'))
         inject_into_file 'app/views/layouts/application.html.haml', :after => "%head" do
-          "\n  = wowza_player_script_tag\n"
+          "\n    = wowza_player_script_tag\n"
         end
-        puts "Please make sure the wowza_player_script_tag is indented correctly to avoid errors."
+        puts "---"*80
+        puts "Please make sure the wowza_player_script_tag was injected to your liking in app/views/layouts/application.html.haml"
       elsif (File.exists?('app/views/layouts/application.html.erb'))
         inject_into_file 'app/views/layouts/application.html.erb', :before => "</head>" do
           "<%= wowza_player_script_tag %>\n"
@@ -20,8 +22,12 @@ class WowzaPlayerGenerator < Rails::Generators::Base
           "<%= wowza_player_script_tag %>\n"
         end
       end
+
+      puts "Wowza Player source has been installed to you app"
+      puts "***"*80
+      readme File.expand_path('.././README', __FILE__)
     rescue => e
-      puts "Unable to install the Wowza Player please do so manually."
+      puts "Unable to install the Wowza Player, please do so manually."
     end
 
   end
