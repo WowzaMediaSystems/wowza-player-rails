@@ -25,7 +25,15 @@ class WowzaPlayerGenerator < Rails::Generators::Base
 
       puts "Wowza Player source has been installed to you app"
       puts "***"*80
-      readme File.expand_path('.././README', __FILE__)
+      puts <<-EOS
+        The Wowza Player is now available as a helper to use in your Rails templates
+
+        ERB:
+          <% = wowza_player_tag(license: <your-wowza-player-license>, sourceURL: <hls-source-url>) %>
+
+        HAML:
+          = wowza_player_tag(license: <your-wowza-player-license>, sourceURL: <hls-source-url>)
+      EOS
     rescue => e
       puts "Unable to install the Wowza Player, please do so manually."
     end
