@@ -3,7 +3,7 @@ module WowzaPlayer
 
     def wowza_player_script(player_source=nil)
       player_source ||= "https://player.wowza.com/player/latest/wowzaplayer.min.js"
-      javascript_inculde_tag
+      javascript_include_tag player_source
     end
 
     def wowza_player_tag(config={})
