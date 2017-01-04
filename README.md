@@ -1,6 +1,6 @@
 # Wowza Player
 
-The Wowza Player in a friendly Rails wrapper.
+Wowza Media Systems™ offers player software called [Wowza™ Player](https://www.wowza.com/products/player), a lightweight HTML5 player that plays Apple HLS streams in any browser, on any device. This provides the Wowza Player in a friendly Rails wrapper.
 
 ##Prerequisites
 A Wowza Player license is required. To obtain a license or learn more, see the [Wowza Player webpage](https://www.wowza.com/products/player).
@@ -52,3 +52,5 @@ This helper supports all of the [Player Builder configuration settings for Wowza
 ## License
 
 This code is distributed under the [Wowza Public License](https://github.com/WowzaMediaSystems/wowza-player-rails/blob/master/LICENSE.txt).
+
+![alt tag](http://wowzalogs.com/stats/githubimage.php?plugin=wowza-player-rails)
