@@ -11,17 +11,17 @@ To install the Wowza Player Rails wrapper:
 
 1. Add the following line to your application's Gemfile:
 
-```ruby
-gem 'wowza_player', git: 'git@github.com:WowzaMediaSystems/wowza-player-rails.git'
-```
+	```ruby
+	gem 'wowza_player', git: 'git@github.com:WowzaMediaSystems/wowza-player-rails.git'
+	```
 
 2. Execute the following command:
 
-```$ bundle install```
+	```$ bundle install```
 
 3. Then use the following command to run the generator and inject the Wowza Player source script into your application layout:
 
-```$ rails generate wowza_player```
+	```$ rails generate wowza_player```
 
 ## Usage
 
