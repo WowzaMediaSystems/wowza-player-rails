@@ -51,4 +51,4 @@ This helper supports all of the [Player Builder configuration settings for Wowza
 
 ## License
 
-This code is distributed under the [Wowza Public License](https://github.com/WowzaMediaSystems/%5Bgithub-project-name%5D/blob/master/LICENSE.txt).
+This code is distributed under the [Wowza Public License](https://github.com/WowzaMediaSystems/wowza-player-rails/blob/master/LICENSE.txt).
