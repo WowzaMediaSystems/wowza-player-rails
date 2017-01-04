@@ -1,6 +1,6 @@
 # Wowza Player
 
-Wowza Media Systems™ offers player software called [Wowza™ Player](https://www.wowza.com/products/player), a lightweight HTML5 player that plays Apple HLS streams in any browser, on any device. This provides the Wowza Player in a friendly Rails wrapper.
+Wowza Media Systems™ offers player software called [Wowza™ Player](https://www.wowza.com/products/player), a lightweight HTML5 player that plays Apple HLS streams in any browser, on any device. This gem provides the Wowza Player in a friendly Rails wrapper.
 
 ##Prerequisites
 A Wowza Player license is required. To obtain a license or learn more, see the [Wowza Player webpage](https://www.wowza.com/products/player).
@@ -19,7 +19,7 @@ To install the Wowza Player Rails wrapper:
 
 	```$ bundle install```
 
-3. Then use the following command to run the generator and inject the Wowza Player source script into your application layout:
+3. Then use the built-in generator to inject the Wowza Player source script into your application layout:
 
 	```$ rails generate wowza_player```
 
