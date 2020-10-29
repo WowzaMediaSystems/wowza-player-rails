@@ -1,6 +1,6 @@
 # Wowza Player
 
-**Wowza Player, Wowza GoCoder SDK, and the technology powering the Ultra Low Latency (ULL) service in Wowza Streaming Cloud will no longer be available on January 5, 2021. [Learn more](https://info.wowza.com/product-notification-april-2020).**
+**Wowza Player, Wowza GoCoder SDK, and the technology powering the Ultra Low Latency (ULL) service in Wowza Streaming Cloud will no longer be available on August 31, 2021. [Learn more](https://info.wowza.com/product-notification-april-2020).**
 
 Wowza Media Systems™ offers player software called [Wowza™ Player](https://www.wowza.com/products/player), a lightweight HTML5 player that plays Apple HLS streams in any browser, on any device. This gem provides the Wowza Player in a friendly Rails wrapper.
 
